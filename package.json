@@ -1,6 +1,6 @@
 {
   "name": "mdn-array.prototype.includes",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "MDN version of Array.prototype.includes shim",
   "main": "index.js",
   "scripts": {
