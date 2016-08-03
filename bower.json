@@ -1,0 +1,30 @@
+{
+  "name": "mdn-array.prototype.includes",
+  "description": "MDN version of Array.prototype.includes shim",
+  "main": "index.js",
+  "authors": [
+    "Dimitri Benin <dimitri.benin@it-designers.de>"
+  ],
+  "license": "CC0-1.0",
+  "keywords": [
+    "mdn",
+    "polyfill",
+    "shim",
+    "array",
+    "prototype",
+    "array.prototype.includes",
+    "array.includes",
+    "includes",
+    "es6",
+    "es2015"
+  ],
+  "homepage": "https://github.com/BendingBender/MDN-Array.prototype.includes",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "package.json"
+  ]
+}

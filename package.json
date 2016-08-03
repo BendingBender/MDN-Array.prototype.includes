@@ -1,0 +1,61 @@
+{
+  "name": "mdn-array.prototype.includes",
+  "version": "0.0.1",
+  "description": "MDN version of Array.prototype.includes shim",
+  "main": "index.js",
+  "scripts": {
+    "build": "uglifyjs -c -m --support-ie8 -o index.min.js --source-map index.min.js.map -- index.js",
+    "bump": "bump --prompt --tag --commit --all",
+    "clean": "rimraf 'index.min.js*'",
+    "release": "npm run clean && npm run build && npm run test-dist && npm run bump",
+    "test": "mocha tests/testSource.js",
+    "test-dist": "mocha tests/testDist.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BendingBender/MDN-Array.prototype.includes.git"
+  },
+  "keywords": [
+    "mdn",
+    "polyfill",
+    "shim",
+    "array",
+    "prototype",
+    "includes",
+    "array.prototype.includes",
+    "array.includes",
+    "es6",
+    "ecmascript 6",
+    "es2015"
+  ],
+  "author": "Dimitri Benin <dimitri.benin@it-designers.de>",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/BendingBender/MDN-Array.prototype.includes/issues"
+  },
+  "homepage": "https://github.com/BendingBender/MDN-Array.prototype.includes#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.0",
+    "rimraf": "^2.5.4",
+    "uglify-js": "^2.7.0",
+    "version-bump-prompt": "^1.5.2"
+  },
+  "testling": {
+    "harness": "mocha-bdd",
+    "files": [
+      "tests/testDist.js"
+    ],
+    "browsers": [
+      "ie/8..latest",
+      "chrome/latest",
+      "firefox/latest",
+      "safari/5..latest",
+      "opera/11",
+      "opera/next",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/4.2"
+    ]
+  }
+}
