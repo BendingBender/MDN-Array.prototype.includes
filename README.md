@@ -17,13 +17,13 @@ For browsers only, bower-friendly. Explicitly not meant to be used with node, us
 * `Array.prototype.includes(searchElement[, fromIndex])` determines whether an array includes a certain element, returning `true` or `false` as appropriate.
 
 #### Parameters
+
 * `searchElement`: The element to search for.
 * `fromIndex`: Optional. The position in this array at which to begin searching for `searchElement`. A negative value searches from the index of array.length + fromIndex by asc. Defaults to 0.
 
-Code example:
+#### Code example
 
 ```javascript
-// Default:
 [1, 5, 7, 10].includes(5) // true
 [1, 5, NaN, 10].includes(NaN) // true
 ```
