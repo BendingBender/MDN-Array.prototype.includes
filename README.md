@@ -4,6 +4,8 @@
 
 # ES6 `Array.prototype.includes` shim
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/BendingBender/MDN-Array.prototype.includes.svg)](https://greenkeeper.io/)
+
 Simple ES6 [Array.prototype.includes](https://tc39.github.io/ecma262/#sec-array.prototype.includes) polyfill for older environments taken from [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes#Polyfill).
 
 For browsers only, bower-friendly. Explicitly not meant to be used with node, use [array-includes](https://github.com/ljharb/array-includes) if you wish a shim for node.
